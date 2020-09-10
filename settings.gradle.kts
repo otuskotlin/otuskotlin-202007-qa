@@ -1,8 +1,7 @@
 rootProject.name = "otuskotlin-202007-qa-eg"
 
 
-include(":qa-common")
-include(":qa-transport-common")
+include("qa-be-common")
 
 
 pluginManagement {
@@ -13,5 +12,4 @@ pluginManagement {
         kotlin("multiplatform") version kotlinVersion
     }
 }
-
-
+include("qa-be-app-ktor")
